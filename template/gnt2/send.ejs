@@ -263,7 +263,7 @@
                                                                                 style='font-size:0px;padding:10px 25px;padding-bottom:0px;word-break:break-word;'>
                                                                                 <div
                                                                                     style='color:#ffffff;font-family:Martel;font-size:22px;font-weight:900;line-height:72px;text-align:left;'>
-                                                                                    Dear <%= PARENT_NICK %>
+                                                                                    Dear <%=pname%>
                                                                                 </div>
                                                                             </td>
                                                                         </tr>
@@ -275,7 +275,7 @@
                                                                                     来自
                                                                                     <u>
                                                                                         <strong>
-                                                                                            <%= NICK %>
+                                                                                            <%=name%>
                                                                                         </strong>
                                                                                     </u>
                                                                                     的回复
@@ -295,7 +295,7 @@
                                                                                             role='presentation'
                                                                                             style='background-color:#eab897;border:none;border-radius:0px;cursor:auto;padding:10px 25px;'
                                                                                             valign='middle'>
-                                                                                            <a href='<%= POST_URL %>#comments'
+                                                                                            <a href='<%=url%>#comments'
                                                                                                 style='background:#eab897;color:#ffffff;font-family:Helvetica, Arial, sans-serif;font-size:22px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;'
                                                                                                 target='_blank'>
                                                                                                 点击前往 Biu~
@@ -338,7 +338,7 @@
                                         <td align='left' style='font-size:0px;padding:10px 25px;word-break:break-word;'>
                                             <div
                                                 style='color:#000000;font-family:Helvetica, Arial, sans-serif;font-size:24px;font-weight:Bolder;line-height:32px;text-align:left;'>
-                                                <%= SITE_NAME %> 上曾发表的评论：
+                                                <%=siteName%> 上曾发表的评论：
                                             </div>
                                         </td>
                                     </tr>
@@ -366,7 +366,7 @@
                                         <td align='left' style='font-size:0px;padding:10px 25px;word-break:break-word;'>
                                             <div
                                                 style='color:#000000;font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:light;line-height:28px;text-align:left;'>
-                                                <%= PARENT_COMMENT %>
+                                                <%-ptext%>
                                             </div>
                                         </td>
                                     </tr>
@@ -432,7 +432,7 @@
                                         <td align='left' style='font-size:0px;padding:10px 25px;word-break:break-word;'>
                                             <div
                                                 style='color:#000000;font-family:Helvetica, Arial, sans-serif;font-size:24px;font-weight:Bolder;line-height:32px;text-align:left;'>
-                                                <%= NICK %> 给您回复啦：
+                                                <%=name%> 给您回复啦：
                                             </div>
                                         </td>
                                     </tr>
@@ -460,7 +460,7 @@
                                         <td align='left' style='font-size:0px;padding:10px 25px;word-break:break-word;'>
                                             <div
                                                 style='color:#000000;font-family:Helvetica, Arial, sans-serif;font-size:18px;font-weight:light;line-height:28px;text-align:left;'>
-                                                <%= COMMENT %>
+                                                <%=-text%>
                                             </div>
                                         </td>
                                     </tr>
